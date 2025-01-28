@@ -4,7 +4,7 @@ sap.ui.define(['sap/dm/dme/podfoundation/component/production/ProductionUICompon
   /**
      * 
      */
-  var Component = ProductionUIComponent.extend('stellium.ext.podplugins.<yourPluginName>.Component', {
+  var Component = ProductionUIComponent.extend('stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.Component', {
     metadata: {
       manifest: 'json'
     },

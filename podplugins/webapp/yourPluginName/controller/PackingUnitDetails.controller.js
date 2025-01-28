@@ -16,7 +16,7 @@ sap.ui.define([
 
     let sOrderExistsProperty = "/orderExists";
 
-    return PackingUnitsController.extend("stellium.ext.podplugins.<yourPluginName>.controller.PackingUnitDetails", {
+    return PackingUnitsController.extend("stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.controller.PackingUnitDetails", {
         oUserAction: new UserAction(),
         onInit: function () {
             this.getOwnerComponent().getTargets().getTarget("packingUnitDetails").attachDisplay(this.onRouteMatched, this);

@@ -5,7 +5,7 @@ sap.ui.define([
 ], function (UIComponent, Device, models) {
     "use strict";
 
-    return UIComponent.extend("stellium.ext.podplugins.Component", {
+    return UIComponent.extend("stellium.ext.podplugins.<projectIdentifier>.Component", {
 
         metadata: {
             manifest: "json"

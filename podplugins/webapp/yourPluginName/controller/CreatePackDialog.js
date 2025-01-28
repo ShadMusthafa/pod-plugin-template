@@ -20,7 +20,7 @@ sap.ui.define([
     const sPackingMaterialRef = "/packingMaterialRef";
     const sReturnablePackaging = "RETURNABLE_PACKAGING";
 
-    return BaseObject.extend("stellium.ext.podplugins.<yourPluginName>.controller.CreatePackDialog", {
+    return BaseObject.extend("stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.controller.CreatePackDialog", {
         enumFormatter: EnumFormatter,
         objectTypeFormatter: ObjectTypeFormatter,
         bAutogenerateId: false,
@@ -34,7 +34,7 @@ sap.ui.define([
          * @constructor
          * @param {PackingUnitsController} oParentController PackingUnit Controller. Used to read all the models.
          * @public
-         * @alias stellium.ext.podplugins.<yourPluginName>.controller.CreatePackDialog
+         * @alias stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.controller.CreatePackDialog
          */
         constructor: function (oParentController) {
             this.oParentController = oParentController;
@@ -49,7 +49,7 @@ sap.ui.define([
             this.bAutogenerateId = this.oParentController.getConfiguration().autogenerateId;
             Fragment.load({
                 id: this.oParentController.getView().getId(),
-                name: "stellium.ext.podplugins.<yourPluginName>.view.fragment.CreatePackDialog",
+                name: "stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.view.fragment.CreatePackDialog",
                 controller: this
             }).then(this.initAndOpenDialog.bind(this));
         },

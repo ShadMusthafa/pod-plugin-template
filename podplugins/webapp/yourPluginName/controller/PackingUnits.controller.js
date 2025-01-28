@@ -41,7 +41,7 @@ sap.ui.define(
     const PUBLIC_FINAL = { public: true, final: true };
     const PUBLIC_NOT_FINAL = { public: true, final: false };
 
-    return ListPluginViewController.extend('stellium.ext.podplugins.packingPlugin.controller.PackingUnits', {
+    return ListPluginViewController.extend('stellium.ext.podplugins.<projectIdentifier>.packingPlugin.controller.PackingUnits', {
       // extension interface
       metadata: {
         methods: {

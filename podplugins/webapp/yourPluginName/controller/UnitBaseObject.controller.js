@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (PackingUnitDetailsController, Filter) {
     "use strict";
 
-    return PackingUnitDetailsController.extend("stellium.ext.podplugins.<yourPluginName>.controller.UnitBaseObjectController", {
+    return PackingUnitDetailsController.extend("stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.controller.UnitBaseObjectController", {
         refreshAvailableList: function (oAvailableList, oListFilter, bFinish) {
             let oAvailableListItemsBinding = oAvailableList.getBinding("items");
 

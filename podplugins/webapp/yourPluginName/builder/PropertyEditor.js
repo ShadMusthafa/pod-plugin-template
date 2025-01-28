@@ -21,12 +21,12 @@ sap.ui.define(
       'enum.sfc.status.hold'
     ];
 
-    var oPropertyEditor = PropertyEditor.extend('stellium.ext.podplugins.<yourPluginName>.builder.PropertyEditor', {
+    var oPropertyEditor = PropertyEditor.extend('stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.builder.PropertyEditor', {
       constructor: function(sId, mSettings) {
         PropertyEditor.apply(this, arguments);
         this.setI18nKeyPrefix('packingPlugin.');
-        this.setResourceBundleName('stellium.ext.podplugins.<yourPluginName>.i18n.builder');
-        this.setPluginResourceBundleName('stellium.ext.podplugins.<yourPluginName>.i18n.i18n');
+        this.setResourceBundleName('stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.i18n.builder');
+        this.setPluginResourceBundleName('stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.i18n.i18n');
       },
 
       handleSelectChange: function(sDataName, sSelectionValue) {

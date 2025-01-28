@@ -12,7 +12,7 @@ sap.ui.define(
   ],
   function(BaseObject, Button, Input, MessageBox, MessageToast, ToolbarSpacer, FilterGroupItem, JSONModel, PodUtility) {
     'use strict';
-    return BaseObject.extend('stellium.ext.podplugins.utils.PodSelectionExtensionUtility', {
+    return BaseObject.extend('stellium.ext.podplugins.<projectIdentifier>.utils.PodSelectionExtensionUtility', {
       constructor: function() {
         this.aCustomFilters = [];
       },

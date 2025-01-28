@@ -17,7 +17,7 @@ sap.ui.define([
     let sDestination = "/destination";
     let sDestinationTypeKey = "/destinationType";
 
-    return BaseObject.extend("stellium.ext.podplugins.<yourPluginName>.controller.AssignDestinationDialog", {
+    return BaseObject.extend("stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.controller.AssignDestinationDialog", {
         enumFormatter: EnumFormatter,
         DateTimeUtils: DateTimeUtils,
         types: { plantdatetime: new PlantDateTimeType() },
@@ -30,7 +30,7 @@ sap.ui.define([
             this.oParentView = this.oParentController.getView();
             Fragment.load({
                 id: this.oParentView.getId(),
-                name: "stellium.ext.podplugins.<yourPluginName>.view.fragment.AssignDestination",
+                name: "stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.view.fragment.AssignDestination",
                 controller: this
             }).then(this.initAndOpenDialog.bind(this));
         },

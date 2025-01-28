@@ -8,7 +8,7 @@ sap.ui.define([
 ], function (UnitBaseObjectController, JSONModel, ListFilter, Filter, PuMaterialBrowse, UserAction) {
     "use strict";
 
-    return UnitBaseObjectController.extend("stellium.ext.podplugins.<yourPluginName>.controller.AvailableUnitsList", {
+    return UnitBaseObjectController.extend("stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.controller.AvailableUnitsList", {
         oAvailableUnitsListFilter: null,
 
         onInit: function () {

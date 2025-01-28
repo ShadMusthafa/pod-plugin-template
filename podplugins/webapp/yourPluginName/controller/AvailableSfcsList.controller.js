@@ -23,7 +23,7 @@ sap.ui.define([
         RETURNED: "enum.status.RETURNED"
     };
 
-    return UnitBaseObjectController.extend("stellium.ext.podplugins.<yourPluginName>.controller.AvailableSfcsList", {
+    return UnitBaseObjectController.extend("stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.controller.AvailableSfcsList", {
         types: {
             quantity: new QuantityType()
         },

@@ -4,9 +4,9 @@
       "id": "stelliumPackingPlugin_1",
       "type": "VIEW_PLUGIN",
       "allowMultipleInstances": false,
-      "name": "stellium.ext.podplugins.<yourPluginName>",
-      "propertyEditor": "stellium.ext.podplugins.<yourPluginName>.builder.PropertyEditor",
-      "i18n": "stellium.ext.podplugins.<yourPluginName>.i18n.i18n",
+      "name": "stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>",
+      "propertyEditor": "stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.builder.PropertyEditor",
+      "i18n": "stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.i18n.i18n",
       "productionProcessEnabled": false,
       "supportedPodTypes": ["WORK_CENTER", "OPERATION", "ORDER", "OTHER", "MONITOR"]
     }

@@ -1,6 +1,6 @@
 {
   "sap.app": {
-    "id": "stellium.ext.podplugins.<yourPluginName>",
+    "id": "stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>",
     "type": "component",
     "applicationVersion": {
       "version": "1.0.0"
@@ -10,7 +10,7 @@
 
   "sap.ui5": {
     "rootView": {
-      "viewName": "stellium.ext.podplugins.<yourPluginName>.view.PackingUnits",
+      "viewName": "stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.view.PackingUnits",
       "type": "XML",
       "id": "packingPlugin"
     },
@@ -25,7 +25,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "stellium.ext.podplugins.<yourPluginName>.i18n.i18n"
+          "bundleName": "stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.i18n.i18n"
         }
       },
       "i18n-enum": {
@@ -93,7 +93,7 @@
       "config": {
         "routerClass": "sap.m.routing.Targets",
         "viewType": "XML",
-        "viewPath": "stellium.ext.podplugins.<yourPluginName>.view",
+        "viewPath": "stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.view",
         "controlId": "packingPlugin",
         "controlAggregation": "content",
         "async": true

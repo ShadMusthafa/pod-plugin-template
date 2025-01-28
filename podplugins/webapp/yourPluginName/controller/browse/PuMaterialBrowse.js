@@ -6,7 +6,7 @@ sap.ui.define([
 ], function (BrowseBase, JSONModel, StatusFormatter, ObjectTypeFormatter) {
     "use strict";
 
-    let MaterialBrowseType = BrowseBase.extend("stellium.ext.podplugins.<yourPluginName>.controller.browse.PuMaterialBrowse", {
+    let MaterialBrowseType = BrowseBase.extend("stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.controller.browse.PuMaterialBrowse", {
 
         statusFormatter: StatusFormatter,
         objectTypeFormatter: ObjectTypeFormatter,
@@ -49,7 +49,7 @@ sap.ui.define([
         open: function (oParentControl, sDefaultSearchValue, fnSelectionCallback, oModel, sDefaultFilter) {
             return new MaterialBrowseType("materialBrowse", {
                 oModel: oModel,
-                sFragmentName: "stellium.ext.podplugins.<yourPluginName>.view.fragment.PuMaterialBrowse",
+                sFragmentName: "stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.view.fragment.PuMaterialBrowse",
                 oParentControl: oParentControl,
                 sDefaultSearchValue: sDefaultSearchValue,
                 fnSelectionCallback: fnSelectionCallback,

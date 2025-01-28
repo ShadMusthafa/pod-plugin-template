@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:fb="sap.ui.comp.filterbar" xmlns:l="sap.ui.layout"
     xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-    controllerName="stellium.ext.podplugins.<yourPluginName>.controller.AvailableSfcsList" height="100%">
+    controllerName="stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.controller.AvailableSfcsList" height="100%">
     <f:DynamicPage id="availableSfcsPage" headerExpanded="true" headerPinned="true" toggleHeaderOnTitleClick="false">
         <f:header>
             <f:DynamicPageHeader id="availableObjectsFilters" pinnable="true">

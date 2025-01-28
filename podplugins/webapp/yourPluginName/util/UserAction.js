@@ -14,7 +14,7 @@ sap.ui.define([ "sap/ui/base/Object" ],
             CLOSED: "CLOSED"
         };
 
-        return BaseObject.extend("stellium.ext.podplugins.<yourPluginName>.utils.UserAction", {
+        return BaseObject.extend("stellium.ext.podplugins.<projectIdentifier>.<yourPluginName>.utils.UserAction", {
             UserActions,
             PackingUnitStatuses,
             _sUserAction: null,

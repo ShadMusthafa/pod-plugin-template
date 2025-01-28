@@ -2,7 +2,7 @@ sap.ui.define([
     "sap/ui/base/Object"
 ], function (BaseObject) {
     "use strict";
-    return BaseObject.extend("stellium.ext.podplugins.utils.ExtensionUtilities", {
+    return BaseObject.extend("stellium.ext.podplugins.<projectIdentifier>.utils.ExtensionUtilities", {
         constructor: function () {
             this.bClearMainInputField = false;
             this.bLogToConsole = false; // set to true to log messages to console
